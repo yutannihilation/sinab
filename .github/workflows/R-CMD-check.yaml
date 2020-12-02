@@ -33,7 +33,6 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: ${{ matrix.config.rust-version }}
-          override: true
 
       - name: Add Rtools targets to Rust
         if: runner.os == 'Windows'
